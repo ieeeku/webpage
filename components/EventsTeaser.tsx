@@ -7,7 +7,7 @@ export default function EventsTeaser() {
 
   return (
     <section className="border-b border-secondary/20">
-      <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-24">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:px-10 md:py-24">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-mono text-label uppercase text-tertiary">
@@ -23,11 +23,17 @@ export default function EventsTeaser() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
-          {events.map((event) => (
-            <EventCard key={event.slug} event={event} />
-          ))}
-        </div>
+        {events.length > 0 ? (
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {events.map((event) => (
+              <EventCard key={event.slug} event={event} />
+            ))}
+          </div>
+        ) : (
+          <p className="mt-8 text-body text-secondary">
+            No upcoming events yet. Check the full events page for past highlights.
+          </p>
+        )}
       </div>
     </section>
   );

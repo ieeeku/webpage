@@ -29,7 +29,7 @@ const areas = [
 export default function FocusAreas() {
   return (
     <section className="border-b border-secondary/20">
-      <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-24">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:px-10 md:py-24">
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="font-mono text-label uppercase text-tertiary">
@@ -39,17 +39,14 @@ export default function FocusAreas() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {areas.map((area) => (
             <div
               key={area.tag}
-              // 'relative' creates the container for the absolute glowing border
-              className="group relative rounded-lg bg-surface p-6 text-primary transition-shadow duration-300 hover:shadow-xl"
+              className="group relative rounded-lg bg-surface p-5 text-primary transition-shadow duration-300 hover:shadow-xl sm:p-6"
             >
-              {/* Glowing Border Layer */}
               <div className="absolute -inset-[1px] -z-10 rounded-lg bg-gradient-to-r from-sky-500 to-sky-700 opacity-0 blur-sm transition-opacity duration-500 group-hover:opacity-100" />
 
-              {/* Sharp Inner Border Line */}
               <div className="absolute inset-0 -z-10 rounded-lg border border-sky-500/50 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
               <span className="font-mono text-label uppercase text-tertiary">
@@ -62,5 +59,5 @@ export default function FocusAreas() {
         </div>
       </div>
     </section>
-  )
-};   
+  );
+}

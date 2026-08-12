@@ -27,7 +27,7 @@ export default function EventDetailPage({
 
   return (
     <main>
-      <div className="mx-auto max-w-4xl px-6 pt-10 md:px-10">
+      <div className="mx-auto max-w-4xl px-4 pt-8 sm:px-6 md:px-10 md:pt-10">
         <Link
           href="/events"
           className="font-mono text-label uppercase text-secondary transition-colors hover:text-tertiary"
@@ -36,7 +36,7 @@ export default function EventDetailPage({
         </Link>
       </div>
 
-      <article className="mx-auto max-w-4xl px-6 py-8 md:px-10">
+      <article className="mx-auto max-w-4xl px-4 py-8 sm:px-6 md:px-10">
         <MediaCover
           src={event.cover}
           alt={event.title}

@@ -11,7 +11,7 @@ export default function EventsPage() {
   return (
     <main>
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 pb-14 pt-16 md:px-10 md:pt-20">
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-12 sm:px-6 md:px-10 md:pb-14 md:pt-20">
           <p className="font-mono text-label uppercase text-tertiary"># Events</p>
           <h1 className="mt-3 text-display-sm text-primary">
             Workshops, hackathons, guest lectures and much more...
@@ -25,12 +25,12 @@ export default function EventsPage() {
       </section>
 
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-20">
           <p className="font-mono text-label uppercase text-secondary">
             Upcoming — {upcoming.length}
           </p>
           {upcoming.length > 0 ? (
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {upcoming.map((event) => (
                 <EventCard key={event.slug} event={event} />
               ))}
@@ -45,11 +45,11 @@ export default function EventsPage() {
 
       {past.length > 0 && (
         <section>
-          <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-20">
             <p className="font-mono text-label uppercase text-secondary">
               Past — {past.length}
             </p>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {past.map((event) => (
                 <EventCard key={event.slug} event={event} />
               ))}

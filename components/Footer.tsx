@@ -17,7 +17,7 @@ const socials = [
 
 export function MembershipCall() {
   return (
-      <div className="mx-auto max-w-6xl px-6 pt-16 md:px-10">
+    <div className="mx-auto max-w-6xl px-4 pt-12 sm:px-6 md:px-10 md:pt-16">
         <div className="rounded-lg bg-surface px-6 py-10 md:px-12 md:py-14">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
@@ -38,21 +38,21 @@ export function MembershipCall() {
             </div>
             <Link
               href="/contact"
-              className="shrink-0 rounded-md bg-tertiary px-6 py-3 font-mono text-label uppercase text-on-primary transition-opacity hover:opacity-90"
+              className="w-full rounded-md bg-tertiary px-6 py-3 text-center font-mono text-label uppercase text-on-primary transition-opacity hover:opacity-90 sm:w-auto"
             >
               Apply now
             </Link>
           </div>
         </div>
-      </div>
+    </div>
   );
 }
 
 export default function Footer() {
   return (
-     <footer className="bg-neutral">
-      <div className="mx-auto max-w-6xl px-6 py-16 md:px-10">
-        <div className="grid gap-10 md:grid-cols-4">
+    <footer className="bg-neutral">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
               <IeeeSBKU className="h-9 w-auto" />

@@ -73,7 +73,7 @@ export default function PeoplePage() {
   return (
     <main>
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 pb-14 pt-16 md:px-10 md:pt-20">
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-12 sm:px-6 md:px-10 md:pb-14 md:pt-20">
           <p className="font-mono text-label uppercase text-tertiary">
             # People
           </p>
@@ -91,12 +91,12 @@ export default function PeoplePage() {
       </section>
 
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-16">
           <p className="font-mono text-label uppercase text-secondary">
             {tierLabels[0].kicker}
           </p>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             {advisor.map((member) => (
               <FeaturedMember key={member.name} member={member} />
             ))}
@@ -105,12 +105,12 @@ export default function PeoplePage() {
       </section>
 
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-16">
           <p className="font-mono text-label uppercase text-secondary">
             {tierLabels[1].kicker}
           </p>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             {leadership.map((member) => (
               <FeaturedMember key={member.name} member={member} />
             ))}
@@ -119,7 +119,7 @@ export default function PeoplePage() {
       </section>
 
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-16">
           <p className="font-mono text-label uppercase text-secondary">
             {tierLabels[2].kicker}
           </p>
@@ -133,12 +133,12 @@ export default function PeoplePage() {
       </section>
 
       <section className="border-b border-secondary/20">
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-16">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-16">
           <p className="font-mono text-label uppercase text-secondary">
             {tierLabels[3].kicker}
           </p>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {coordinators.map((member) => (
               <MemberCard key={member.name} member={member} size="lg" />
             ))}
@@ -147,12 +147,12 @@ export default function PeoplePage() {
       </section>
 
       <section>
-        <div className="mx-auto max-w-6xl px-6 py-14 md:px-10 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:px-10 md:py-20">
           <p className="font-mono text-label uppercase text-secondary">
             {tierLabels[4].kicker}
           </p>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {committee.map((member) => (
               <MemberCard key={member.name} member={member} size="lg" />
             ))}
