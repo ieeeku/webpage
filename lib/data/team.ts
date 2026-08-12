@@ -60,7 +60,7 @@ export const members: Member[] = [
     name: "Purnima Acharya",
     position: "Secretary",
     department: "Department of Electrical and Electronics Engineering",
-    avatar: "/teams/executive/purnima_acharya_secretary.jpg",
+    avatar: "/teams/board/purnima_acharya_secretary.jpg",
     email: "#",
     tier: 1,
   },
@@ -69,7 +69,7 @@ export const members: Member[] = [
     position: "Webmaster",
     department: "Department of Computer Science and Engineering",
     email: "contact@rajatdahal.com.np",
-    avatar: "/teams/executive/rajat_dahal_meow.png",
+    avatar: "/teams/board/rajat_dahal_meow.png",
     tier: 1,
   },
   {
