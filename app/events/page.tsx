@@ -14,7 +14,7 @@ export default function EventsPage() {
         <div className="mx-auto max-w-6xl px-6 pb-14 pt-16 md:px-10 md:pt-20">
           <p className="font-mono text-label uppercase text-tertiary"># Events</p>
           <h1 className="mt-3 text-display-sm text-primary">
-            Workshops, build nights, and delegations.
+            Workshops, hackathons, guest lectures and much more...
           </h1>
           <p className="mt-4 max-w-lg text-body text-secondary">
             Everything the branch runs, from weekly open labs to conference

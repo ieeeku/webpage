@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Home — IEEE Kathmandu University Student Branch",
+    default: "IEEE Kathmandu University Student Branch",
     template: "%s — IEEE KU Student Branch",
   },
   description:
