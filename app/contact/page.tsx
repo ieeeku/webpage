@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Contact & FAQs" };
 const contactDetails = [
   { label: "Email", value: "ieeekusb@ku.edu.np", href: "mailto:ieeekusb@ku.edu.np" },
   { label: "Location", value: "Kathmandu University, Dhulikhel" },
-  { label: "Office hours", value: "Mon–Fri, 2:00 PM – 4:00 PM, Room EEE-104" },
+  { label: "Office hours", value: "Mon–Fri, 24/7 Online " },
 ];
 
 export default function ContactPage() {
